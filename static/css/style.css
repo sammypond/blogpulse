@@ -1,0 +1,35 @@
+body {
+    background-color: pink;
+}
+
+.flex-container {
+    display: inline-block;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 120px;
+    border-radius: 8%;
+    background-color: rebeccapurple;
+  }
+  
+  .flex-container > div {
+    background-color: aliceblue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 10%;
+  }
+
+  .banner {
+      text-align: center;
+  }
+
+  textarea {
+      height: 200px;
+      width: 400px;
+  }
+
+  nav {
+      margin-left: 500px;
+  }

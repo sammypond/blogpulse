@@ -1,0 +1,11 @@
+<a href="/">&larr; Back Home</a>
+<h2 class="banner">Authors</h2>
+
+<% authors.forEach(function(author){ %>
+    <div class="flex-container">
+        <div class="authors"><a href="/authors/<%= author.id %>"><%= author.name %></a> </div>
+    </div>
+<% }); %>
+
+<hr />
+

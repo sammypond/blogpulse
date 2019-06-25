@@ -1,0 +1,14 @@
+<h1>All BlogPulse posts</h1>
+
+<% posts.forEach(function(post){ %>
+    <div class="mainpost">
+        <h3>
+        <a href="/posts/<%= post.id%>">  
+        <%= post.title %></a>
+        </h3>
+        <p><%= post.content %></p>
+        <p>By <%= post.author.name %></p>
+        <p><%= moment(post.createdAt).calendar()%></p>
+    </div>
+    <hr />
+<% }); %>

@@ -1,0 +1,25 @@
+<div class="banner">
+<a href="/">&larr; Back Home</a>
+
+<h1><%= post.title %> <small>by <%= post.author.name %></small></h1> 
+
+<p>
+    <%= moment(post.createdAt).calendar()%>
+</p>
+
+<p><%= post.content%></p>
+<hr />
+
+<form method="POST" action="/posts/<%= post.id %>/comments">
+    <input type="text" name="name" placeholder="Enter your name"><br />
+    <input type="text" name="comment" pleaceholder="Preach it..."><br />
+    <input type="submit" value="Comment">
+</form>
+<hr />
+
+<% post.comments.forEach(function(comment){ %>
+<p> " <%= comment.comment  %> - <%= comment.name %> "</p>
+
+<% }); %>
+
+</div>

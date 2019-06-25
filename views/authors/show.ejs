@@ -1,0 +1,16 @@
+<a href="/authors">&larr; Back Home</a>
+
+<h1 class="banner"><%= author.name %></h1>
+
+<hr />
+
+<h2 class="banner">Posts:</h2>
+
+<% author.posts.forEach(function(post){ %>
+    <div class="post">
+        <h3 class="banner">
+            <a href="/posts/<%= post.id %>"><%= post.title %></a>
+        </h3>
+    </div>
+<% }); %>
+
